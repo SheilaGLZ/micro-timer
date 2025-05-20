@@ -11,9 +11,10 @@ confinement: devmode
 
 parts:
     micro-timer:
-        plugin: autotools
-        autotools-configure-parameters: ["--prefix=/usr"]
-        source: https://github.com/sheilaglz/micro-timer.git
+        plugin: cmake
+        cmake-parameters: 
+            - DCMAKE_BUILD_TYPE=Release
+        source: https://github.com/SheilaGLZ/micro-timer
         build-packages:
             - qtbase5-dev
             - qtdeclarative5-dev
