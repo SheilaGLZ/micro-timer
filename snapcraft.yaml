@@ -1,0 +1,27 @@
+name: micro-timer
+base: core22
+version: '0.1'
+summary: Minimalist timer
+description: |
+    Micro-timer is a minimalist timer with the simplest user interface. 
+    One-click to start/stop the timer, double-click to clear the timer and
+    right-click to open a context menu. 
+
+confinement: devmode
+
+parts:
+    micro-timer:
+        plugin: autotools
+        autotools-configure-parameters: ["--prefix=/usr"]
+        source: https://github.com/sheilaglz/micro-timer.git
+        build-packages:
+            - qtbase5-dev
+            - qtdeclarative5-dev
+            - qml-module-qtquick-controls
+            - qml-module-qtquick-controls2
+            - qtquickcontrols2-5-dev
+            - cmake
+        
+apps:
+    micro-timer:
+        command /usr/bin/micro-timer

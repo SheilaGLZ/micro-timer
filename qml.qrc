@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>AboutDialog.qml</file>
+        <file>resources/drag_icon_black.png</file>
+        <file>resources/drag_icon_white.png</file>
+        <file>resources/timer.png</file>
+    </qresource>
+</RCC>
