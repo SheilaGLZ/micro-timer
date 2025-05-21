@@ -9,3 +9,18 @@ Very simple interface:
 - Right-click to open a context menu -> About, Close
 
 Enjoy!
+
+## Compile on Ubuntu
+
+```
+apt-get install cmake qtbase5-dev qtdeclarative5-dev qml-module-qtquick-controls qml-module-qtquick-controls2 qtquickcontrols2-5-dev
+mkdir build && cd build
+cmake ..
+make
+```
+
+Then run with
+
+```
+./micro-timer
+```
