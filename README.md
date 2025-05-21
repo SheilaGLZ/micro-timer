@@ -10,6 +10,12 @@ Very simple interface:
 
 Enjoy!
 
+## Install from snap
+
+```
+snap install micro-timer
+```
+
 ## Compile on Ubuntu
 
 ```
